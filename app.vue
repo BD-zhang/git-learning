@@ -9,7 +9,7 @@
 <style>
 body {
   margin: 0;
-  background: black;
+  background: black; 
   color: white;
 }
 </style>
