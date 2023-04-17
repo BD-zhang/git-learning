@@ -1,6 +1,5 @@
 <template>
-    <div>
-        <div style="color: white;">this is home layout111</div>
+    <div class="home">
         <MenuList :menuList="menuList"/>
     </div>
 </template>
@@ -21,4 +20,7 @@ const menuList: Array<menuListArrType> = [
 </script>
 
 <style>
+.home {
+    margin-top: 50px;
+}
 </style>
