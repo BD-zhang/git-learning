@@ -1,7 +1,7 @@
 <template>
     <div>
-        <ul>
-            <li v-for="(item, index) in menuList" :key="index">
+        <ul class="menu_ul">
+            <li v-for="(item, index) in menuList" :key="index" class="menu_li">
                 <span @click="gotoUrl">{{ item.name }}</span>
             </li>
         </ul>
@@ -10,29 +10,31 @@
 
 <script lang="ts" setup>
 import { PropType } from 'vue';
-// import { menuListArrType } from './types'
+import { menuListArrType } from './types'
 
-// defineProps({
-//     menuList: {
-//         type: Array as PropType<menuListArrType[]>,
-//         default: []
-//     }
-// })
-const menuList: Array<any> = [
-    {
-        name: '首页',
-        url: ''
-    },
-    {
-        name: '测试',
-        url: ''
+let props = defineProps({
+    menuList: {
+        type: Array as PropType<menuListArrType[]>,
+        default: []
     }
-]
+})
+const menuList = ref(props.menuList)
+console.log('!!!', props.menuList)
 function gotoUrl(item: any): void {
     if (!item.name) return
     // ...跳转逻辑
 }
 </script>
 
-<style>
+<style lang="less">
+.menu_ul {
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    background: gray;
+    .menu_li {
+        
+    }
+}
 </style>
