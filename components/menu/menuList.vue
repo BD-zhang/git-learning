@@ -26,17 +26,18 @@ function gotoUrl(item: any): void {
 }
 </script>
 
-<style>
+<style lang="less">
 .menu_ul {
     display: flex;
     text-decoration: none;
-    width: 100%;
     height: 50px;
     background: gray;
     justify-content: space-around;
     align-items: center;
+
+    .menu_li {
+        list-style: none;  
+    }
 }
-.menu_li {
-    list-style: none;  
-}
+
 </style>
