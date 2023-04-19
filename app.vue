@@ -1,15 +1,18 @@
 <template>
-  <div>
-    <NuxtLayout>
-      <NuxtPage></NuxtPage>
-    </NuxtLayout>
+  <div class="app">
+    <NuxtPage></NuxtPage>
   </div>
 </template>
 
-<style>
+<style lang="less">
 body {
   margin: 0;
   background: black; 
   color: white;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
 }
 </style>

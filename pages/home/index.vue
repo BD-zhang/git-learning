@@ -1,7 +1,9 @@
 <template>
     <div class="home">
         <NuxtLayout/>
-        <div style="color: yellow">welcome to git-learning</div>
+        <div class="home-typer">
+            <StrTyper initStr="asfasdfasfasdfasdfasdfasdf asfasdfasfasdfasdfasdfasdf asfasdfasfasdfasdfasdfasdf"/>
+        </div>
     </div>
 </template>
 
@@ -11,8 +13,16 @@ definePageMeta({
 })
 </script>
 
-<style>
+<style lang="less">
 .home {
     background: black;
+    width: 100%;
+    height: 100%;
+
+    .home-typer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 </style>

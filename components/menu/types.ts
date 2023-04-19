@@ -1,6 +1,6 @@
 export interface menuListArrType {
     name: string,
-    url: string
+    path: string
 }
 
 export interface menuListType {

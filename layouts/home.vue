@@ -1,26 +1,24 @@
 <template>
-    <div class="home">
+    <div class="layout-home">
         <MenuList :menuList="menuList"/>
     </div>
 </template>
 
 <script lang="ts" setup>
 import { menuListArrType } from '../components/menu/types'
-import MenuList from '../components/menu/menuList.vue'
 const menuList: Array<menuListArrType> = [
     {
         name: '首页',
-        url: ''
+        path: '/home'
     },
     {
-        name: '测试',
-        url: ''
-    }
-]
+        name: '开始',
+        path: '/learning'
+    }]
 </script>
 
-<style>
-.home {
+<style lang="less">
+.layout-home {
     margin-top: 50px;
 }
 </style>
