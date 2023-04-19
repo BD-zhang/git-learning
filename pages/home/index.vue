@@ -2,7 +2,7 @@
     <div class="home">
         <NuxtLayout/>
         <div class="home-typer">
-            <StrTyper initStr="asfasdfasfasdfasdfasdfasdf asfasdfasfasdfasdfasdfasdf asfasdfasfasdfasdfasdfasdf"/>
+            <TyperStrTyper initStr="asfasdfasfasdfasdfasdfasdf asfasdfasfasdfasdfasdfasdf asfasdfasfasdfasdfasdfasdf"/>
         </div>
     </div>
 </template>
