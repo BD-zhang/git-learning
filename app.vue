@@ -2,6 +2,7 @@
   <div class="app">
     <NuxtPage></NuxtPage>
   </div>
+  <div>test git diff</div>
 </template>
 
 <style lang="less">
