@@ -1,7 +1,6 @@
 <template>
-  <div>
-    this is learning page, including guiding window
-  </div>
+  <div>this is learning page, including guiding window</div>
+  <Terminal/>
 </template>
 
 <script lang="ts" setup>
