@@ -16,14 +16,32 @@
     </div>
     <div class="terminal_body"></div>
     <div class="terminal_input">
-      <div>
-        <input type="text" class="input">
-      </div>
+        <span>$</span>
+        <input type="text" class="input" 
+          v-model="inputStr"
+          @input="handleInput"
+          @change="handleSendCommand">
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+const inputStr = ref<string>('')
+
+/**
+ * 获取输入框字符
+*/
+const handleInput = () => {
+  console.log('val', inputStr.value)
+}
+
+/**
+ * 发送指令
+*/
+const handleSendCommand = () => {
+  console.log('发送指令', inputStr.value)
+}
+
 
 </script>
 
@@ -85,18 +103,25 @@
   }
 
   .terminal_input {
+    display: flex;
+    padding-left: 5px;
+    background: rgb(68, 68, 68);
+    align-items: center;
+    border-radius: 0 0 5px 5px;
 
     .input {
-      background: gray;
+      background: rgb(68, 68, 68);
+      color: white;
       border: none;
       outline: none;
       padding: 5px;
-      font-size: 20px;
+      font-size: 17px;
       box-sizing: border-box;
       border-radius: 0 0 5px 5px;
       width: 100%;
-      height: 50px;
+      height: 30px;
       caret-color: greenyellow;
+      letter-spacing: 1px;
     }
   }
 }
